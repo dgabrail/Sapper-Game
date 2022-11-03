@@ -18,7 +18,7 @@ const Sapper: React.FC<Props> = ({sapperList , showItem}) => {
     }
 
     return (
-        <div onClick={sapperList} style={sapperStyle} >
+        <div onClick={sapperList} style={sapperStyle}>
             <span>O</span>
         </div>
     );
