@@ -1,25 +1,14 @@
 import React from 'react';
+import { Cell } from '../../types';
 import './Sapper.css'
 interface Props {
-    sapperList: React.MouseEventHandler
-    showItem: boolean
+    changeStyle: (changeCell: Cell) => void 
+    cell: Cell
 }
-const Sapper: React.FC<Props> = ({sapperList , showItem}) => {
-    const sapperStyle:  React.CSSProperties = {
-        margin: '1px',
-        width: '40px',
-        height: '40px',
-        background: 'black',
-        display: 'inline-block',
-    }
-
-    if(showItem === true){
-        sapperStyle.background = 'red'
-    }
-
+const Sapper: React.FC<Props> = ({cell , changeStyle}) => {
     return (
-        <div onClick={sapperList} style={sapperStyle}>
-            <span>O</span>
+        <div onClick={() => changeStyle(cell)} className={cell.style}>
+            <span>{cell.bomb}</span>
         </div>
     );
 };

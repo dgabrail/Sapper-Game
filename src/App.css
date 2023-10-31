@@ -1,15 +1,16 @@
-.App{
+.App {
   text-align: center;
 }
 
-.App button{
-  margin-top: 20px;
+.Field {
+  width: 20%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
-.sapperTwo  {
-  padding: 20px;
-  border: 1px solid black;
+
+.Field button {
   margin: auto;
   margin-top: 10px;
-  text-align: center;
-  width: 280px;
 }

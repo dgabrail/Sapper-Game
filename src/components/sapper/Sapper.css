@@ -1,6 +1,13 @@
+.SapperBlack {
+  background-color: black;
+  width: 20px;
+  height: 20px;
+  margin: 10px;
+}
 
-
-
-
-
-
+.SapperWite {
+  background-color: none;
+  width: 20px;
+  height: 20px;
+  margin: 10px;
+}
